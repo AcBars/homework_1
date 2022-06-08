@@ -11,16 +11,18 @@ WriteLine("Введите второе число");
 int number2 = Convert.ToInt32(ReadLine());
 WriteLine("Введите третье число");
 int number3 = Convert.ToInt32(ReadLine());
-int max;
+if (number1==number2 && number2==number3) WriteLine("Числа равны между собой");
+else
+{
+    int max;
 if (number1>number2) max=number1;
 else max=number2;
 if (max>number3)
 {
     WriteLine($"Максимальное число из трех равно {max}");
-   // Write(max);
 }
 else
 {
     WriteLine($"Максимальное число из трех равно {number3}");
-    //Write(max);
+}
 }
